@@ -1,0 +1,30 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+body{
+    background-image: url('img/background.webp');
+    background-repeat: repeat-y;
+    background-color: rgb(191, 222, 250);
+}
+h1{
+    
+    color: rgb(27, 60, 88) ;
+}
+
+ul{
+    list-style-type: symbols();
+    font-size: 16px;
+}
+ul li::marker{
+    color: rgb(80, 24, 145);
+    content: '☉';
+}
+ol{
+    list-style: none;
+    counter-reset: li;
+}
+ol li::before{
+    counter-increment: li;
+    content: counters(li, ".") ". ";
+}
