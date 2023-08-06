@@ -10,6 +10,7 @@ function Greeting() {
     return userName;
 }
 
+
 function DisplayInfo() {
     document.getElementById("name").innerHTML = Greeting();
 }
